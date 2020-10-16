@@ -1,0 +1,40 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	margin: 0;
+	padding: 0;
+	color: var(--text);
+	font-family: var(--font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 0;
+}
+
+h2 {
+	font-size: 3.5rem;
+	line-height: 4rem;
+}
+a {
+	text-decoration: none;
+	color: var(--text);
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}

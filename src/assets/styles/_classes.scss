@@ -1,0 +1,42 @@
+span.active {
+	margin: 1rem auto 0 auto;
+	width: 2rem;
+	height: 0.2rem;
+	background: white;
+	display: block;
+	text-align: center;
+}
+
+.btn-hover {
+	padding: 1rem 2rem 1rem 2rem;
+	border-radius: 3rem;
+}
+
+.btn {
+	padding: 1rem 2rem 1rem 2rem;
+	border-radius: 1rem;
+	border: 0;
+	&:hover {
+		background-color: var(--hover);
+	}
+}
+.btn-light {
+	background: white;
+}
+.btn-dark {
+	background: black;
+	border: 1px solid white;
+	color: white;
+	&:hover {
+		background-color: rgba(255, 255, 255, 0.3);
+	}
+}
+
+.card {
+	border-radius: 1.6rem;
+
+	img {
+		width: 100%;
+		border-radius: 1.6rem 1.6rem 0 0;
+	}
+}
