@@ -6,6 +6,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 module.exports = {
 	entry: {
 		main: path.join(__dirname, "src/index.js"),
+		modals: path.join(__dirname, "src/assets/javascripts/modals.js"),
 	},
 	output: {
 		path: path.join(__dirname, "dist"),
@@ -47,7 +48,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			filename: "index.html",
 			template: path.join(__dirname, "./src/index.html"),
-			chunks: ["main"],
+			chunks: ["main", "modals"],
 		}),
 	],
 	stats: "minimal",

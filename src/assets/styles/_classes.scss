@@ -7,30 +7,43 @@ span.active {
 	text-align: center;
 }
 
-.btn-hover {
-	padding: 1rem 2rem 1rem 2rem;
+.separator-w100 {
+	background: var(--hint);
+	width: 100%;
+	height: 1px;
+}
+// Button :
+
+.btn-opacity {
+	padding: 1.3rem 2rem;
+	// margin: 0 1rem 0 1rem;
 	border-radius: 3rem;
+	&:hover {
+		background: rgba(255, 255, 255, 0.2);
+	}
 }
 
 .btn {
-	padding: 1rem 2rem 1rem 2rem;
+	padding: 1rem 2rem;
 	border-radius: 1rem;
 	border: 0;
-	&:hover {
-		background-color: var(--hover);
+	&.btn-light {
+		background: white;
+		&:hover {
+			background-color: var(--hover);
+		}
+	}
+	&.btn-dark {
+		background: black;
+		border: 1px solid white;
+		color: white;
+		&:hover {
+			background-color: rgba(255, 255, 255, 0.3);
+		}
 	}
 }
-.btn-light {
-	background: white;
-}
-.btn-dark {
-	background: black;
-	border: 1px solid white;
-	color: white;
-	&:hover {
-		background-color: rgba(255, 255, 255, 0.3);
-	}
-}
+
+// Images :
 
 .card {
 	border-radius: 1.6rem;
@@ -40,3 +53,59 @@ span.active {
 		border-radius: 1.6rem 1.6rem 0 0;
 	}
 }
+
+// Modals :
+
+.calc {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(255, 255, 255, 0.2);
+	filter: blur(0.2);
+	display: flex;
+}
+.pos-relative {
+	position: relative;
+}
+.modal {
+	position: absolute;
+	top: 6rem;
+	right: 0;
+	min-width: 20rem;
+	border-radius: 1.4rem;
+	box-shadow: var(--box-shadow);
+	padding: 0 1.5rem;
+	background: white;
+	/* 	margin-right: 0;
+	margin-left: 0; */
+
+	.bold {
+		font-weight: 700;
+	}
+	p {
+		color: var(--text);
+		cursor: pointer;
+		font-size: 1.4rem;
+	}
+
+	a {
+		color: var(--text);
+	}
+	i {
+		min-width: 2rem;
+		text-align: center;
+		font-size: 1.6rem;
+	}
+}
+
+/* .modal-test {
+	position: absolute;
+	// top: 5rem;
+	min-width: 30rem;
+	border-radius: 1.4rem;
+	box-shadow: var(--box-shadow);
+	padding: 5rem;
+	background: red;
+} */

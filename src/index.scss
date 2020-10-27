@@ -102,11 +102,6 @@
 				justify-content: flex-end;
 				align-items: center;
 
-				.btn-hover {
-					&:hover {
-						background: rgba(255, 255, 255, 0.2);
-					}
-				}
 				a {
 					color: white;
 				}
@@ -119,7 +114,8 @@
 					background: white;
 					border-radius: 5rem;
 					padding-left: 1rem;
-					font-size: 1rem;
+					// font-size: 1rem;
+					margin-left: 1rem;
 					i {
 						font-size: 1.6rem;
 						color: var(--text);
