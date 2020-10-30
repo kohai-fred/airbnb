@@ -27,6 +27,7 @@ paraCurrencyElem.innerHTML = `<i class='fas fa-euro-sign'></i><span class="bold"
 
 const tableLang = document.createElement("p");
 tableLang.innerHTML = "English";
+
 /* Insert multiples elements in HTML */
 /* footerCountrySection.insertAdjacentElement("afterbegin", paraLangElem);
 footerCountrySection.insertAdjacentElement("beforeend", paraCurrencyElem); */
@@ -37,11 +38,9 @@ footerCountrySection.insertAdjacentElement("beforeend", paraCurrencyElem); */
 const createCalc = () => {
 	calc = document.createElement("div");
 	calc.classList.add("calc");
-	// cancelModal();
 
 	calc.insertAdjacentElement("afterbegin", modal);
 	body.append(calc);
-	// console.log(modal);
 };
 
 const createModal = (sizeModal, contentModal) => {
@@ -55,7 +54,6 @@ const createModal = (sizeModal, contentModal) => {
 /* Functions */
 
 const cancelModal = () => {
-	// console.log(modal.classList == "modal-small");
 	if (modal != "") {
 		if (modal.className == "modal modal-small") {
 			body
@@ -92,7 +90,6 @@ const modalLangIco = (event) => {
 		event.stopPropagation();
 		cancelModal();
 		modalLangChoices();
-		// createCalc();
 	});
 };
 
@@ -107,7 +104,6 @@ const modalLangChoices = () => {
 	contentModal.append(crossCloseIco, separator, firstSection);
 	createModal("modal-big", contentModal);
 	createCalc();
-	// console.log(modal);
 };
 
 accountMenuElem.addEventListener("click", (event) => {
@@ -141,9 +137,7 @@ accountMenuElem.addEventListener("click", (event) => {
 changeLanguageIco.addEventListener("click", modalLangIco);
 footerCountrySection.firstElementChild.addEventListener("click", (event) => {
 	event.stopPropagation();
-	// cancelModal();
 	modalLangChoices();
-	// createCalc();
 });
 
 body.addEventListener("click", (event) => {
