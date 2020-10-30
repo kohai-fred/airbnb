@@ -339,6 +339,11 @@
 						font-size: 2rem;
 						margin: 0 1rem 0 2rem;
 					}
+					p {
+						display: inline;
+						text-decoration: underline;
+						cursor: pointer;
+					}
 				}
 
 				.footer-social {
